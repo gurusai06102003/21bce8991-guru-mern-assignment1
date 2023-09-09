@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TASK2</title>
+    <style>
+        #container {
+            margin-top: 200px;
+            margin-bottom: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        h3 {
+            text-align: center;
+            display: inline;
+        }
+
+        #horizontal {
+            justify-content: center;
+            width: 50%;
+            margin-top: auto;
+            margin-bottom: auto;
+
+        }
+
+        #vertical {
+            width: 20%;
+            margin-right: 10%
+        }
+
+        #verticalnavbar {
+            width: 80%;
+            margin-right: 100px;
+            border: 1px solid black;
+            padding-left: 0px;
+            background-color: rgb(132, 228, 228);
+        }
+
+        .vertical {
+            list-style-type: none;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            margin: 0px;
+            padding-left: 0px;
+        }
+
+        .vertical:hover {
+            background-color: orange;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        #horizontalnavbar {
+            padding: 5px;
+
+        }
+
+        .horizontal {
+            list-style-type: none;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            display: inline;
+            font: 50px;
+            color: blue;
+            border-left: 1px solid blue;
+            border-right: 1px solid blue;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: lightgray;
+        }
+
+        .horizontal:hover {
+            background-color: grey;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="vertical">
+            <h3>Vertical Navigation Bar</h3>
+            <ul id="verticalnavbar">
+                <li class="vertical">Home</li>
+                <li class="vertical">Java</li>
+                <li class="vertical">CSS</li>
+                <li class="vertical">HTML</li>
+                <li class="vertical">Bootstrap</li>
+            </ul>
+        </div>
+        <div id="horizontal">
+            <h3>Horizontal Navigation Bar</h3>
+            <ul id="horizontalnavbar">
+                <li class="horizontal">Home</li>
+                <li class="horizontal">Java</li>
+                <li class="horizontal">CSS</li>
+                <li class="horizontal">HTML</li>
+                <li class="horizontal">Bootstrap</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
